@@ -1,0 +1,5 @@
+# Git ignore for IDFC4A-BengkelPro
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

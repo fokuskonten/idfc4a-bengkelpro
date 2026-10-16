@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 20px;
+        }
+        .bg-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        
+        th, td {
+            padding: 8px;
+        }
+        .table-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .sub-total {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-header">
+
+        <!-- Row start -->
+        <div class="row fs-5">
+            <div class="col-sm-6 gutters fw-bolder  text-primary text-uppercase fst-italic">
+                    BengkelPro
+            </div>
+
+            <div class="col-sm-6">
+                <address class="text-right">
+                    Layanan Servis & Suku Cadang Resmi<br />
+                    35132
+                </address>
+            </div>
+        </div>
+        <!-- Row end -->
+
+
+    </div>
+
+    <table class="table table-hover table-striped table-bordered">
+      <thead>
+        <tr>
+          <th class="text-center" colspan="3">Uraian</th>
+          <th class="text-center">Jumlah</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th colspan="7">4. PEMASUKAN</th>
+        </tr>
+        <tr>
+          <th>4.1.</th>
+          <th colspan="2">Iuran</th>
+          <th class="text-right">Rp. 2.210.000</th>
+        </tr>
+        <tr>
+          <td></td>
+          <th>4.1.1.</th>
+          <th>Iuran Per Odalan</th>
+          <td class="text-right">Rp. 600.000</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>4.1.2.</th>
+          <th>Iuran Per Tahun</th>
+          <td class="text-right">Rp. 100.000</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>4.1.3.</th>
+          <th>Iuran Mekarya</th>
+          <td class="text-right">Rp. 1.500.000</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>4.1.4.</th>
+          <th>Iuran Lain-Lain</th>
+          <td class="text-right">Rp. 10.000</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>6.3.0.</th>
+          <th>Iuran Lain-Lain</th>
+          <td class="text-right">Rp. 0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>6.3.1.</th>
+          <th>Iuran Lain-Lain</th>
+          <td class="text-right">Rp. 0</td>
+        </tr>
+        <tr>
+          <th>4.2.</th>
+          <th colspan="2">Denda</th>
+          <th class="text-right">Rp. 35.000</th>
+        </tr>
+        <tr>
+          <td></td>
+          <th>4.2.1.</th>
+          <th>Denda Tidak Hadir Bersih - Bersih</th>
+          <td class="text-right">Rp. 35.000</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>4.2.2.</th>
+          <th>Denda Tidak Hadir Mekemit</th>
+          <td class="text-right">Rp. 0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>4.2.3.</th>
+          <th>Denda Tidak Hadir Tedon</th>
+          <td class="text-right">Rp. 0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>4.2.4.</th>
+          <th>Denda Lain - Lain</th>
+          <td class="text-right">Rp. 0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>6.3.2.</th>
+          <th>Iuran Per Odalan</th>
+          <td class="text-right">Rp. 0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>6.3.4.</th>
+          <th>Denda lain lain</th>
+          <td class="text-right">Rp. 0</td>
+        </tr>
+        <tr>
+          <th>4.3.</th>
+          <th colspan="2">Dana Punia</th>
+          <th class="text-right">Rp. 900.000</th>
+        </tr>
+        <tr>
+          <td></td>
+          <th>4.3.1.</th>
+          <th>Dana Punia Odalan</th>
+          <td class="text-right">Rp. 500.000</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>4.3.2.</th>
+          <th>Dana Punia Lain - Lain</th>
+          <td class="text-right">Rp. 400.000</td>
+        </tr>
+        <tr>
+          <td></td>
+          <th>6.3.3.</th>
+          <th>Denda lain - lain</th>
+          <td class="text-right">Rp. 0</td>
+        </tr>
+        <tr class="bg-primary text-white font-weight-bold">
+          <td class="text-center text-uppercase" colspan="3">Jumlah PEMASUKAN</td>
+          <td class="text-right">Rp. 3.145.000</td>
+        </tr>
+        <tr>
+          <th colspan="7">5. PENGELUARAN</th>
+        </tr>
+        <tr>
+          <th>5.1.</th>
+          <th colspan="2">Pengeluaran Per Bulan</th>
+          <th class="text-right">Rp. 50.000</th>
+        </tr>
+        <tr>
+          <th>5.2.</th>
+          <th colspan="2">Pengeluaran Per Odalan</th>
+          <th class="text-right">Rp. 1.500.000</th>
+        </tr>
+        <tr>
+          <th>5.3.</th>
+          <th colspan="2">Pengeluaran Pembangunan</th>
+          <th class="text-right">Rp. 0</th>
+        </tr>
+        <tr class="bg-primary text-white font-weight-bold">
+          <td class="text-center text-uppercase" colspan="3">Jumlah PENGELUARAN</td>
+          <td class="text-right">Rp. 1.550.000</td>
+        </tr>
+        <tr class="bg-primary text-white font-weight-bold">
+          <td class="text-center text-uppercase" colspan="3">Total Kas</td>
+          <td class="text-right">Rp. 1.595.000</td>
+        </tr>
+      </tbody>
+    </table>
+    
+
+    <p class="text-center">Thank you for your Business.</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+		window.print();
+	</script>
+</body>
+</html>
