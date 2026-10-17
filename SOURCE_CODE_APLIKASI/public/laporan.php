@@ -4,22 +4,33 @@
     <div class="col-lg-12">
       <div class="card">
         <div class="card-body">
-          <div class="row">
-
+          <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 pb-2 border-bottom">
+            <div class="d-flex align-items-center mb-2 mb-md-0">
+              <div class="icon icon-shape bg-primary-light text-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px; border: 1px solid rgba(37,99,235,0.15);">
+                <i class="ni ni-calendar-grid-58 fs-5 text-primary"></i>
+              </div>
+              <div>
+                <h6 class="mb-0 text-dark font-weight-bolder">Laporan Transaksi Harian</h6>
+                <span class="text-xs text-muted">Tanggal: <strong class="text-dark"><?= htmlspecialchars($_GET['tgl'] ?? date('Y-m-d')); ?></strong></span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <form class="d-flex align-items-center m-0" action="" method="get" id="search">
+                <input type="hidden" name="page" value="laporan">
+                <input type="hidden" name="act" value="list">
+                <div class="input-group input-group-sm">
+                  <input type="date" class="form-control" name="tgl" id="tanggal" value="<?= htmlspecialchars($_GET['tgl'] ?? date('Y-m-d')); ?>" required>
+                  <button class="btn btn-primary mb-0 px-3" type="submit" title="Filter Tanggal">
+                    <i class="fas fa-search me-1"></i> Cari
+                  </button>
+                </div>
+              </form>
+              <a class="btn btn-outline-primary btn-sm mb-0 d-inline-flex align-items-center px-3" href="public/printlaporan.php?tgl=<?= htmlspecialchars($_GET['tgl'] ?? date('Y-m-d')); ?>" target="_blank" style="white-space: nowrap;">
+                <i class="fa fa-print me-1"></i> Cetak
+              </a>
+            </div>
           </div>
           <div class="row">
-            <div class="col-lg-8" style="text-align:left; ">
-              <p class="fs-4 text-uppercase">tanggal : <?= $_GET['tgl']; ?></p>
-            </div>
-            <div class="col-lg-3" style="text-align:right; ">
-              <form class="input-group btn-group btn-group-sm" action="" method="get" aria-label="Small button group" id="search">
-                <span class="input-group-text text-body"><button class=""><i class="fas fa-search" aria-hidden="true"></i></button></span>
-                <input type="date" class="form-control" name="tgl" id="tanggal" onfocus="focused(this)" onfocusout="defocused(this)">
-              </form>
-            </div>
-            <div class="col-lg-1" style="text-align:right; ">
-              <a class="btn btn-primary btn-lg" href="public/printlaporan.php?tgl=<?= $_GET['tgl']; ?>" target="_blank">Print</a>
-            </div>
             <div class="col-12">
               <div class="card mb-1">
                 <div class="card-body px-2 pt-2 pb-2">

@@ -15,12 +15,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico?v=2">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png?v=2">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Invoice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Laporan Transaksi - BengkelPro FokusKonten</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,8 +28,11 @@
             padding: 20px;
         }
         .bg-primary {
-            background-color: #007bff;
-            color: #fff;
+            background-color: #2563eb !important;
+            color: #ffffff !important;
+        }
+        .text-white, .text-white * {
+            color: #ffffff !important;
         }
         table {
             width: 100%;

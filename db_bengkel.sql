@@ -5,14 +5,9 @@
 -- Kompatibilitas: MySQL 5.7+ / MariaDB 10.4+ / XAMPP / Laragon
 -- ========================================================
 
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Apr 16, 2024 at 11:28 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Engine: MySQL 5.7+ / MariaDB 10.4+
+-- Charset: utf8mb4 / Engine: InnoDB
+-- Status: Production Clean Dump
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;

@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-  <title>
-    Sistem Informasi Bengkel | Register
-  </title>
+  <title>BengkelPro - Software Kasir Bengkel Resmi FokusKonten</title>
     <!-- alert  -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!--     Fonts and icons     -->
@@ -68,11 +66,10 @@
               </div>
             </div>
             <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
-              <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signin-ill.jpg');
-          background-size: cover;">
+              <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background: linear-gradient(310deg, #5e72e4 0%, #825ee4 100%);">
                 <span class="mask bg-gradient-primary opacity-6"></span>
-                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Sistem Informasi Bengkel"</h4>
-                <p class="text-white position-relative">Enter your email and password to sign in</p>
+                <h4 class="mt-5 text-white font-weight-bolder position-relative">BengkelPro</h4>
+                <p class="text-white position-relative">Sistem Kasir &amp; Manajemen Bengkel Resmi FokusKonten</p>
               </div>
             </div>
           </div>
@@ -188,8 +185,7 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="./assets/js/argon-dashboard.min.js?v=2.0.4"></script>
 </body>

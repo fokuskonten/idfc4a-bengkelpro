@@ -3,3 +3,7 @@
 *.log
 .DS_Store
 Thumbs.db
+*.zip
+*.tar.gz
+*.rar
+node_modules/

@@ -1,0 +1,184 @@
+/* ==========================================================================
+   FokusKonten Clean Enterprise Theme
+   Aesthetic: Light, Modern, Monochromatic Base with Single Royal Blue Accent
+   Zero Dark Mode | Zero Circus/Rainbow Colors
+   ========================================================================== */
+
+:root {
+  --fk-primary: #2563eb;
+  --fk-primary-hover: #1d4ed8;
+  --fk-primary-light: #eff6ff;
+  --fk-bg: #f8fafc;
+  --fk-card-bg: #ffffff;
+  --fk-border: #e2e8f0;
+  --fk-text-main: #0f172a;
+  --fk-text-muted: #64748b;
+}
+
+body {
+  background-color: var(--fk-bg) !important;
+  color: var(--fk-text-main) !important;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* 1. Header Banner & Top Background */
+.bg-primary, .min-height-300.bg-primary {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%) !important;
+}
+
+/* 2. Sidenav Sidebar & Brand Mascot Anti-Gepeng Guard */
+.navbar-vertical .navbar-brand-img,
+.navbar-brand-img {
+  width: 52px !important;
+  height: 52px !important;
+  max-width: 52px !important;
+  max-height: 52px !important;
+  min-width: 52px !important;
+  min-height: 52px !important;
+  object-fit: cover !important;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+}
+
+.sidenav-header {
+  height: auto !important;
+  min-height: 80px !important;
+}
+
+.sidenav {
+  background-color: var(--fk-card-bg) !important;
+  border-right: 1px solid var(--fk-border) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.sidenav .navbar-nav .nav-link {
+  color: var(--fk-text-muted) !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  margin: 2px 12px !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.sidenav .navbar-nav .nav-link:hover {
+  background-color: var(--fk-primary-light) !important;
+  color: var(--fk-primary) !important;
+}
+
+.sidenav .navbar-nav .nav-link.active {
+  background-color: var(--fk-primary-light) !important;
+  color: var(--fk-primary) !important;
+  box-shadow: none !important;
+}
+
+/* 3. Unified Icon Shapes - Hapus Circus Multi-Color */
+.icon.icon-shape {
+  background: var(--fk-primary-light) !important;
+  color: var(--fk-primary) !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(37, 99, 235, 0.15) !important;
+}
+
+.icon.icon-shape i {
+  color: var(--fk-primary) !important;
+}
+
+/* Override seluruh icon circus (danger, info, warning, success, secondary) */
+.text-primary, .text-info, .text-danger, .text-warning, .text-secondary, .text-success {
+  color: var(--fk-primary) !important;
+}
+
+.bg-gradient-primary,
+.bg-gradient-secondary,
+.bg-gradient-success,
+.bg-gradient-info,
+.bg-gradient-warning,
+.bg-gradient-danger,
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%) !important;
+  box-shadow: none !important;
+}
+
+/* 4. Cards & Containers */
+.card {
+  background-color: var(--fk-card-bg) !important;
+  border: 1px solid var(--fk-border) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.card-header {
+  background-color: transparent !important;
+  border-bottom: 1px solid var(--fk-border) !important;
+}
+
+/* 5. Buttons */
+.btn-primary, .btn.bg-gradient-primary {
+  background: var(--fk-primary) !important;
+  background-color: var(--fk-primary) !important;
+  border-color: var(--fk-primary) !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.btn-primary:hover, .btn.bg-gradient-primary:hover {
+  background: var(--fk-primary-hover) !important;
+  background-color: var(--fk-primary-hover) !important;
+  border-color: var(--fk-primary-hover) !important;
+}
+
+/* 6. Form Inputs */
+.form-control {
+  border: 1px solid var(--fk-border) !important;
+  background-color: #ffffff !important;
+  color: var(--fk-text-main) !important;
+  border-radius: 8px !important;
+}
+
+.form-control:focus {
+  border-color: var(--fk-primary) !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* 7. Tables & High-Contrast Guard */
+.table th {
+  background-color: #f8fafc;
+  color: var(--fk-text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--fk-border);
+}
+
+.table td {
+  border-bottom: 1px solid var(--fk-border);
+  color: var(--fk-text-main);
+  vertical-align: middle;
+}
+
+/* Contrast Guard: Teks di atas latar belakang biru (bg-primary) WAJIB putih murni 100% dan tebal */
+.bg-primary,
+.table tr.bg-primary,
+.table tr.bg-primary td,
+.table tr.bg-primary th,
+.table th.bg-primary,
+.table td.bg-primary,
+.text-white,
+.text-white * {
+  color: #ffffff !important;
+}
+
+.table tr.bg-primary td,
+.table tr.bg-primary th,
+.table th.bg-primary,
+.table td.bg-primary {
+  background: var(--fk-primary) !important;
+  background-color: var(--fk-primary) !important;
+  font-weight: 700 !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(248, 250, 252, 0.6);
+  color: inherit;
+}
+
